@@ -319,3 +319,6 @@ p {
   color: white;
   background: #5e42a6;
 }
+.hide {
+  display: none;
+}
