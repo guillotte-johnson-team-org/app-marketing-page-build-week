@@ -16,26 +16,8 @@ div.container {
   div#wrapper {
     width: 78%;
 
-    //Intro Sction CSS
-    section#intro {
-      background-attachment: fixed;
-      background-image: url("../img/intro.svg");
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-color: @main-bg;
+    section {
       margin: 0;
-
-      p {
-        font-size: 2rem;
-        margin: 3rem 0;
-      }
-
-      .halfscreen img {
-        width: 250px;
-        box-shadow: 1.5rem 0rem 2.5rem rgba(36, 1, 59, 0.5);
-        border-radius: 40px;
-      }
     }
 
     .fullscreen {
@@ -65,6 +47,91 @@ div.container {
       letter-spacing: 0.25rem;
       text-transform: uppercase;
       color: @button-font-color;
+    }
+
+    button.light {
+      background: @main-font-color;
+      color: #361f78;
+    }
+
+    //Intro Sction CSS
+    section#intro {
+      background-attachment: fixed;
+      background-image: url("../img/intro.svg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: @main-bg;
+
+      p {
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+
+      .halfscreen img {
+        width: 70%;
+        min-width: 250px;
+        box-shadow: 0rem 0rem 2.5rem rgba(14, 0, 24, 0.35);
+        border-radius: 35px;
+      }
+    }
+
+    section#one {
+      display: flex;
+      flex-direction: column;
+      background-color: #361f78;
+      padding-bottom: 40px;
+
+      div.screen-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 8rem 0;
+      }
+
+      div.appscreen {
+        width: 18%;
+
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1.35rem;
+          text-align: center;
+        }
+      }
+
+      div.divider {
+        width: 80%;
+        height: 15px;
+        border-radius: 7.5px;
+        background-color: @main-font-color;
+        margin: 0 auto;
+      }
+
+      div.info-graph {
+        display: flex;
+        justify-content: space-between;
+        padding: 8rem;
+
+        div {
+          height: 200px;
+          max-width: 70%;
+          img {
+            height: 100%;
+          }
+        }
+
+        h2,
+        p {
+          padding: 0 0 25px;
+        }
+
+        button {
+          margin-right: 25px;
+        }
+      }
     }
   }
 }

@@ -336,23 +336,8 @@ div.container {
 div.container div#wrapper {
   width: 78%;
 }
-div.container div#wrapper section#intro {
-  background-attachment: fixed;
-  background-image: url("../img/intro.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #5e42a6;
+div.container div#wrapper section {
   margin: 0;
-}
-div.container div#wrapper section#intro p {
-  font-size: 2rem;
-  margin: 3rem 0;
-}
-div.container div#wrapper section#intro .halfscreen img {
-  width: 250px;
-  box-shadow: 1.5rem 0rem 2.5rem rgba(36, 1, 59, 0.5);
-  border-radius: 40px;
 }
 div.container div#wrapper .fullscreen {
   display: flex;
@@ -379,4 +364,74 @@ div.container div#wrapper button {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: white;
+}
+div.container div#wrapper button.light {
+  background: #b8b0d9;
+  color: #361f78;
+}
+div.container div#wrapper section#intro {
+  background-attachment: fixed;
+  background-image: url("../img/intro.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #5e42a6;
+}
+div.container div#wrapper section#intro p {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+div.container div#wrapper section#intro .halfscreen img {
+  width: 70%;
+  min-width: 250px;
+  box-shadow: 0rem 0rem 2.5rem rgba(14, 0, 24, 0.35);
+  border-radius: 35px;
+}
+div.container div#wrapper section#one {
+  display: flex;
+  flex-direction: column;
+  background-color: #361f78;
+  padding-bottom: 40px;
+}
+div.container div#wrapper section#one div.screen-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8rem 0;
+}
+div.container div#wrapper section#one div.appscreen {
+  width: 18%;
+}
+div.container div#wrapper section#one div.appscreen img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+div.container div#wrapper section#one div.appscreen p {
+  font-size: 1.35rem;
+  text-align: center;
+}
+div.container div#wrapper section#one div.divider {
+  width: 80%;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #b8b0d9;
+  margin: 0 auto;
+}
+div.container div#wrapper section#one div.info-graph {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem;
+}
+div.container div#wrapper section#one div.info-graph div {
+  height: 200px;
+  max-width: 70%;
+}
+div.container div#wrapper section#one div.info-graph div img {
+  height: 100%;
+}
+div.container div#wrapper section#one div.info-graph h2,
+div.container div#wrapper section#one div.info-graph p {
+  padding: 0 0 25px;
+}
+div.container div#wrapper section#one div.info-graph button {
+  margin-right: 25px;
 }
