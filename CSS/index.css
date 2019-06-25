@@ -211,7 +211,6 @@ p {
 .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
-  justify-content: center;
   align-content: center;
 }
 @media (max-width: 500px) {
