@@ -6,6 +6,7 @@
     
     @media(max-width: 500px){
         padding: 0;
+        // width: 100%;
     }
 
     h1{
@@ -15,6 +16,7 @@
         @media(max-width: 500px){
             text-align: center;
             padding-top: 75px;
+            margin-bottom: 40px;
         }
     }
 
@@ -35,9 +37,14 @@
             margin-right: 75px;
 
             @media(max-width: 500px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 margin: 0 auto;
                 width:450px;
                 margin-bottom: 40px;
+                padding: 15px;
             }
 
             img{
@@ -45,6 +52,11 @@
                 height: auto;
                 margin-bottom: 30px;
                 border-radius: 10px;
+
+                @media(max-width: 500px){
+                    width: 375px;
+                 
+                }
             }
             
 
@@ -68,6 +80,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    @media(max-width: 500px){
+        margin: 0 auto;
+    }
     
 
     h1{

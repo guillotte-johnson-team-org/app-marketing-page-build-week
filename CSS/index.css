@@ -160,6 +160,7 @@ p {
 @media (max-width: 500px) {
   .wrapper {
     margin: 0 auto;
+    width: 100%;
   }
 }
 .navbar {
@@ -240,6 +241,7 @@ p {
   .about-us h1 {
     text-align: center;
     padding-top: 75px;
+    margin-bottom: 40px;
   }
 }
 .about-us .employee-container {
@@ -257,9 +259,14 @@ p {
 }
 @media (max-width: 500px) {
   .about-us .employee-container .employee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     width: 450px;
     margin-bottom: 40px;
+    padding: 15px;
   }
 }
 .about-us .employee-container .employee img {
@@ -267,6 +274,11 @@ p {
   height: auto;
   margin-bottom: 30px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .about-us .employee-container .employee img {
+    width: 375px;
+  }
 }
 .about-us .employee-container .employee h2 {
   padding-bottom: 30px;
@@ -284,6 +296,11 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .join {
+    margin: 0 auto;
+  }
 }
 .join h1 {
   color: #5e42a6;
