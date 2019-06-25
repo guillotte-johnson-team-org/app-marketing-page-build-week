@@ -130,7 +130,6 @@ html {
 }
 html,
 body {
-
   font-family: Arial, Helvetica, sans-serif;
   color: #b8b0d9;
 }
@@ -139,7 +138,7 @@ h2,
 h3,
 h4,
 h5 {
-
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 h1 {
@@ -165,10 +164,14 @@ p {
     width: 100%;
   }
 }
-.navbar {
-  font-size: 1.8rem;
-  height: 100%;
+section.sidebar {
   width: 22%;
+  height: 100vh;
+}
+section.sidebar .navbar {
+  font-size: 1.8rem;
+  height: inherit;
+  width: inherit;
   background: #322759;
   position: fixed;
   top: 0;
@@ -177,9 +180,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10000;
 }
 @media (max-width: 500px) {
-  .navbar {
+  section.sidebar .navbar {
     font-size: 1.4rem;
     height: auto;
     width: 100%;
@@ -189,7 +193,7 @@ p {
     padding: 10px 0;
   }
 }
-.navbar a {
+section.sidebar .navbar a {
   width: 80%;
   text-decoration: none;
   display: flex;
@@ -202,7 +206,7 @@ p {
   font-family: verdana;
 }
 @media (max-width: 500px) {
-  .navbar a {
+  section.sidebar .navbar a {
     width: auto;
     margin-left: 0;
     margin-bottom: 0;
@@ -210,14 +214,14 @@ p {
     border-bottom: 1px solid #3b2c62;
   }
 }
-.navbar a:hover {
+section.sidebar .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
   justify-content: center;
   align-content: center;
 }
 @media (max-width: 500px) {
-  .navbar a:hover {
+  section.sidebar .navbar a:hover {
     border-bottom: 1px solid white;
     color: white;
     justify-content: center;
@@ -322,32 +326,41 @@ p {
   color: white;
   background: #5e42a6;
 }
-div#wrapper {
-  margin-left: 18rem;
+div.container {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
-div#wrapper section#intro {
+div.container div#wrapper {
+  width: 78%;
+}
+div.container div#wrapper section#intro {
   background-attachment: fixed;
   background-image: url("../img/intro.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #5e42a6;
+  margin: 0;
 }
-div#wrapper section#intro p {
+div.container div#wrapper section#intro p {
   font-size: 2rem;
   margin: 3rem 0;
 }
-div#wrapper section#intro .halfscreen img {
+div.container div#wrapper section#intro .halfscreen img {
   width: 250px;
+  box-shadow: 1.5rem 0rem 2.5rem rgba(36, 1, 59, 0.5);
+  border-radius: 40px;
 }
-div#wrapper .fullscreen {
+div.container div#wrapper .fullscreen {
   display: flex;
   justify-content: center;
   min-height: 100vh;
   width: 100%;
 }
-div#wrapper .halfscreen {
+div.container div#wrapper .halfscreen {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,7 +368,7 @@ div#wrapper .halfscreen {
   height: 100%;
   padding: 8rem;
 }
-div#wrapper button {
+div.container div#wrapper button {
   background: transparent;
   height: 4.75rem;
   width: 18rem;
