@@ -432,7 +432,7 @@ div.container div#wrapper section#one div.divider {
 div.container div#wrapper section#one div.info-graph {
   display: flex;
   justify-content: space-between;
-  padding: 8rem;
+  padding: 8rem 8rem 0;
 }
 div.container div#wrapper section#one div.info-graph div {
   padding-bottom: 8rem;
