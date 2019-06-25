@@ -1,6 +1,7 @@
-.sidenav {
+.navbar {
+    font-size: 1.8rem;
     height: 100%;
-    width: 300px;
+    width: 22%;
     background: @nav-bar;
     position: fixed;
     top: 0;
@@ -8,25 +9,53 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    @media(max-width: 500px) {
+        font-size: 1.4rem;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        padding: 10px 0;
+        
+    }
     
     
     
     a{
-      width: 200px;
-      margin-left:50px;
+      width: 80%;
       text-decoration: none;
       display: flex;
       justify-content: flex-end;
       color: @nav-text;
       padding-bottom: 15px;
-      margin-bottom: 35px;
+      margin-bottom: 45px;
       border-bottom: 2px solid @nav-item-border;
       letter-spacing: 1px;
       font-family: verdana;
+
+      @media(max-width: 500px){
+          width: auto;
+          margin-left: 0;
+          margin-bottom: 0;
+          padding-bottom: 5px;
+          border-bottom: 1px solid @nav-item-border;
+      }
       
       &:hover{
         border-bottom: 2px solid white;
         color: @nav-text-hover;
+        justify-content: center;
+        align-content: center;
+
+        @media(max-width: 500px){
+            border-bottom: 1px solid white;
+            color: @nav-text-hover;
+            justify-content: center;
+            align-content: center;
+        }
         
       }
       

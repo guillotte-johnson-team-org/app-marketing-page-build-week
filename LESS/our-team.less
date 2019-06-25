@@ -1,0 +1,110 @@
+.about-us{
+    padding-left: 150px;
+    padding-top: 175px;;
+    padding-bottom: 75px;
+    background: @main-bg;
+    
+    @media(max-width: 500px){
+        padding: 0;
+        // width: 100%;
+    }
+
+    h1{
+        font-size: 7rem;
+        margin-bottom: 65px;
+
+        @media(max-width: 500px){
+            text-align: center;
+            padding-top: 75px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .employee-container{
+        display: flex;
+        justify-content: center;
+
+        @media(max-width:500px){
+        
+            flex-wrap: wrap;
+        }
+        
+
+
+
+        .employee{
+            width: 600px;
+            margin-right: 75px;
+
+            @media(max-width: 500px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width:450px;
+                margin-bottom: 40px;
+                padding: 15px;
+            }
+
+            img{
+                width:400px;
+                height: auto;
+                margin-bottom: 30px;
+                border-radius: 10px;
+
+                @media(max-width: 500px){
+                    width: 375px;
+                 
+                }
+            }
+            
+
+            h2{
+                padding-bottom: 30px;
+
+                @media(max-width: 500px){
+                    text-align: center;
+                }
+                
+            }
+        }
+    }
+}
+
+.join {
+    margin-left: 400px;
+    padding-top: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 500px){
+        margin: 0 auto;
+    }
+    
+
+    h1{
+        color: @main-bg;
+        margin-bottom: 25px;
+    }
+
+    button{
+        font-size: 2.5rem;
+        padding: 15px;
+        width: 250px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        color: @main-bg;
+        background: white;
+
+        &:hover{
+            cursor: pointer;
+            color: white;
+            background: @main-bg;
+        }
+    }
+}
+
