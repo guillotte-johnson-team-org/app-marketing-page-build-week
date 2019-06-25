@@ -213,7 +213,6 @@ p {
 .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
-  justify-content: center;
   align-content: center;
 }
 @media (max-width: 500px) {
@@ -322,6 +321,10 @@ p {
   color: white;
   background: #5e42a6;
 }
+
+.hide {
+  display: none;
+
 div#wrapper {
   margin-left: 18rem;
   width: 100%;
