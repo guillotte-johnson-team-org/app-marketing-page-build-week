@@ -495,23 +495,21 @@ div.container div#wrapper section#one div.info-graph {
   justify-content: space-between;
   padding: 8rem 8rem 0;
 }
-@media div {
-  div.container div#wrapper section#one div.info-graph {
-    padding-bottom: 8rem;
-    max-width: 75%;
-  }
-  div.container div#wrapper section#one div.info-graph img {
-    height: 200px;
-    margin-right: 30px;
-  }
+div.container div#wrapper section#one div.info-graph div {
+  padding-bottom: 8rem;
+  max-width: 75%;
 }
-@media div and (max-width: 500px) {
-  div.container div#wrapper section#one div.info-graph {
+@media (max-width: 500px) {
+  div.container div#wrapper section#one div.info-graph div {
     max-width: 100%;
   }
 }
-@media div and (max-width: 500px) {
-  div.container div#wrapper section#one div.info-graph img {
+div.container div#wrapper section#one div.info-graph div img {
+  height: 200px;
+  margin-right: 30px;
+}
+@media (max-width: 500px) {
+  div.container div#wrapper section#one div.info-graph div img {
     display: none;
   }
 }
