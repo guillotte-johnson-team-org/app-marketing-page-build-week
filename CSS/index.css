@@ -219,7 +219,6 @@ section.sidebar .navbar a {
 section.sidebar .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
-  justify-content: center;
   align-content: center;
 }
 @media (max-width: 500px) {
@@ -277,8 +276,17 @@ section.sidebar .navbar a:hover {
 .employees .join button {
   margin-top: 2rem;
 }
+
 footer {
   display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+div#wrapper {
+  margin-left: 18rem;
   width: 100%;
   background-color: #493382;
   padding: 8rem;
