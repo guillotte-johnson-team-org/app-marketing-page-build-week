@@ -229,103 +229,52 @@ section.sidebar .navbar a:hover {
     align-content: center;
   }
 }
-.about-us {
-  padding-left: 150px;
-  padding-top: 175px;
-  padding-bottom: 75px;
-  background: #5e42a6;
-}
-@media (max-width: 500px) {
-  .about-us {
-    padding: 0;
-  }
-}
-.about-us h1 {
-  font-size: 7rem;
-  margin-bottom: 65px;
-}
-@media (max-width: 500px) {
-  .about-us h1 {
-    text-align: center;
-    padding-top: 75px;
-    margin-bottom: 40px;
-  }
-}
-.about-us .employee-container {
+.employees {
   display: flex;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .about-us .employee-container {
-    flex-wrap: wrap;
-  }
-}
-.about-us .employee-container .employee {
-  width: 600px;
-  margin-right: 75px;
-}
-@media (max-width: 500px) {
-  .about-us .employee-container .employee {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 450px;
-    margin-bottom: 40px;
-    padding: 15px;
-  }
-}
-.about-us .employee-container .employee img {
-  width: 400px;
-  height: auto;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .about-us .employee-container .employee img {
-    width: 375px;
-  }
-}
-.about-us .employee-container .employee h2 {
-  padding-bottom: 30px;
-}
-@media (max-width: 500px) {
-  .about-us .employee-container .employee h2 {
-    text-align: center;
-  }
-}
-.join {
-  margin-left: 400px;
-  padding-top: 40px;
-  background: white;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  background-attachment: fixed;
+  background-image: url("../img/intro.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #5e42a6;
 }
-@media (max-width: 500px) {
-  .join {
-    margin: 0 auto;
-  }
+.employees h1 {
+  padding: 3rem;
+  background-color: #1c1140;
+  margin: 0 0 4rem;
 }
-.join h1 {
-  color: #5e42a6;
+.employees .employee {
+  display: flex;
+  margin: 0 4rem;
+}
+.employees .employee img {
+  height: 320px;
+}
+.employees .employee .employee-text {
+  margin: 0 0 25px;
+  padding: 2rem;
+  height: 320px;
+  background-color: rgba(108, 114, 208, 0.5);
+  overflow: hidden;
+}
+.employees .employee .employee-text h2 {
   margin-bottom: 25px;
 }
-.join button {
-  font-size: 2.5rem;
-  padding: 15px;
-  width: 250px;
-  border-radius: 15px;
-  margin-bottom: 40px;
-  color: #5e42a6;
-  background: white;
+.employees .employee .employee-text p {
+  margin-bottom: 25px;
+  font-size: 1.7rem !important;
 }
-.join button:hover {
-  cursor: pointer;
-  color: white;
-  background: #5e42a6;
+.employees .join {
+  margin: 0 4rem 4rem;
+  padding: 3rem;
+  background-color: rgba(28, 17, 64, 0.6);
+}
+.employees .join h3 {
+  text-decoration: underline;
+}
+.employees .join button {
+  margin-top: 2rem;
 }
 
 footer {
@@ -352,7 +301,6 @@ div.container {
   height: 100%;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 }
 div.container div#wrapper {
   width: 78%;
