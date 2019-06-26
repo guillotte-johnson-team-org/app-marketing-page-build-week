@@ -130,7 +130,6 @@ html {
 }
 html,
 body {
-
   font-family: Arial, Helvetica, sans-serif;
   color: #b8b0d9;
 }
@@ -139,7 +138,7 @@ h2,
 h3,
 h4,
 h5 {
-
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 h1 {
@@ -165,10 +164,16 @@ p {
     width: 100%;
   }
 }
-.navbar {
-  font-size: 1.8rem;
-  height: 100%;
+section.sidebar {
   width: 22%;
+  height: 100vh;
+}
+section.sidebar .navbar {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: inherit;
+  width: inherit;
   background: #322759;
   position: fixed;
   top: 0;
@@ -177,9 +182,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10000;
 }
 @media (max-width: 500px) {
-  .navbar {
+  section.sidebar .navbar {
     font-size: 1.4rem;
     height: auto;
     width: 100%;
@@ -189,7 +195,7 @@ p {
     padding: 10px 0;
   }
 }
-.navbar a {
+section.sidebar .navbar a {
   width: 80%;
   text-decoration: none;
   display: flex;
@@ -202,7 +208,7 @@ p {
   font-family: verdana;
 }
 @media (max-width: 500px) {
-  .navbar a {
+  section.sidebar .navbar a {
     width: auto;
     margin-left: 0;
     margin-bottom: 0;
@@ -210,13 +216,13 @@ p {
     border-bottom: 1px solid #3b2c62;
   }
 }
-.navbar a:hover {
+section.sidebar .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
   align-content: center;
 }
 @media (max-width: 500px) {
-  .navbar a:hover {
+  section.sidebar .navbar a:hover {
     border-bottom: 1px solid white;
     color: white;
     justify-content: center;
@@ -322,35 +328,48 @@ p {
   background: #5e42a6;
 }
 
+footer {
+  display: flex;
+}
+
 .hide {
   display: none;
+}
 
 div#wrapper {
   margin-left: 18rem;
   width: 100%;
+  background-color: #493382;
+  padding: 8rem;
+  color: rgba(255, 255, 255, 0.35);
 }
-div#wrapper section#intro {
-  background-attachment: fixed;
-  background-image: url("../img/intro.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #5e42a6;
-}
-div#wrapper section#intro p {
+footer span.vert-divider {
   font-size: 2rem;
-  margin: 3rem 0;
+  margin: 0 25px;
 }
-div#wrapper section#intro .halfscreen img {
-  width: 250px;
+div.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
-div#wrapper .fullscreen {
+div.container div#wrapper {
+  width: 78%;
+}
+div.container div#wrapper p {
+  font-size: 2rem;
+}
+div.container div#wrapper section {
+  margin: 0;
+}
+div.container div#wrapper .fullscreen {
   display: flex;
   justify-content: center;
   min-height: 100vh;
   width: 100%;
 }
-div#wrapper .halfscreen {
+div.container div#wrapper .halfscreen {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,7 +377,7 @@ div#wrapper .halfscreen {
   height: 100%;
   padding: 8rem;
 }
-div#wrapper button {
+div.container div#wrapper button {
   background: transparent;
   height: 4.75rem;
   width: 18rem;
@@ -369,4 +388,161 @@ div#wrapper button {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: white;
+}
+div.container div#wrapper button.light {
+  background: #b8b0d9;
+  color: #361f78;
+}
+div.container div#wrapper section#intro {
+  background-attachment: fixed;
+  background-image: url("../img/intro.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #5e42a6;
+}
+div.container div#wrapper section#intro p {
+  margin: 3rem 0;
+}
+div.container div#wrapper section#intro .halfscreen img {
+  width: 70%;
+  min-width: 180px;
+  border-radius: 35px;
+}
+div.container div#wrapper section#one {
+  display: flex;
+  flex-direction: column;
+  background-color: #361f78;
+}
+div.container div#wrapper section#one div.screen-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8rem;
+}
+div.container div#wrapper section#one div.appscreen {
+  width: 18%;
+}
+div.container div#wrapper section#one div.appscreen img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+div.container div#wrapper section#one div.appscreen p {
+  font-size: 1.35rem;
+  text-align: center;
+}
+div.container div#wrapper section#one div.divider {
+  width: 80%;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #b8b0d9;
+  margin: 0 auto;
+}
+div.container div#wrapper section#one div.info-graph {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 8rem 0;
+}
+div.container div#wrapper section#one div.info-graph div {
+  padding-bottom: 8rem;
+  max-width: 75%;
+}
+div.container div#wrapper section#one div.info-graph div img {
+  height: 200px;
+  margin-right: 30px;
+}
+div.container div#wrapper section#one div.info-graph h2,
+div.container div#wrapper section#one div.info-graph p {
+  padding: 0 0 25px;
+}
+div.container div#wrapper section#one div.info-graph button {
+  margin: 0 25px 25px 0;
+}
+div.container div#wrapper section#two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+div.container div#wrapper section#two div.para {
+  background-color: #4f52b5;
+  width: 100%;
+  padding: 8rem;
+}
+div.container div#wrapper section#two div.para h2 {
+  padding: 0 0 20px;
+}
+div.container div#wrapper section#two div.post-para {
+  background-color: #b74d91;
+  width: 100%;
+  padding: 8rem;
+}
+div.container div#wrapper section#two div.post-para div.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+div.container div#wrapper section#two div.post-para div.boxes div {
+  width: 47.5%;
+}
+div.container div#wrapper section#two div.post-para div.boxes h2 {
+  font-weight: bolder;
+  padding: 1.5rem 4rem;
+  background-color: rgba(100, 45, 80, 0.7);
+  color: white;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+div.container div#wrapper section#two div.post-para div.boxes section {
+  display: flex;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-bottom: 3rem;
+  border-radius: 2px;
+}
+div.container div#wrapper section#two div.post-para div.boxes section div {
+  width: 85%;
+  margin-left: 30px;
+}
+div.container div#wrapper section#two div.post-para div.boxes section h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+div.container div#wrapper section#two div.post-para div.boxes section p {
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 15px;
+  line-height: 3.5rem;
+}
+div.container div#wrapper section#two div.post-para div.boxes section span.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 5rem;
+  height: 5rem;
+  background: #ffffff;
+  border-radius: 100%;
+  color: #b74d91;
+  font-size: 3rem;
+  font-weight: 900;
+}
+div.container div#wrapper section#three {
+  display: flex;
+  flex-direction: row;
+}
+div.container div#wrapper section#three div {
+  padding: 8rem;
+  background-color: #1c1140;
+  width: 100%;
+}
+div.container div#wrapper section#three div h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2.25rem;
+}
+div.container div#wrapper section#three div.appstore-icons {
+  display: flex;
+  justify-content: center;
+}
+div.container div#wrapper section#three div.appstore-icons img {
+  margin: 0 30px;
+  height: 6rem;
 }
