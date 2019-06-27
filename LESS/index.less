@@ -105,11 +105,23 @@ div.container {
       text-transform: uppercase;
       color: @button-font-color;
       outline: none;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.35);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
 
     button.light {
-      background: @main-font-color;
-      color: #361f78;
+      background: rgba(284, 176, 217, 0.15);
+      color: white;
+
+      &:hover {
+        background-color: #b8b0d9;
+        color: @nav-bar;
+      }
     }
 
     //Intro Sction CSS

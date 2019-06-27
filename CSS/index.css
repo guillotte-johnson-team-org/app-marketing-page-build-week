@@ -213,6 +213,8 @@ section.sidebar .navbar a {
   border-bottom: 2px solid #3b2c62;
   letter-spacing: 1px;
   font-family: verdana;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   section.sidebar .navbar a {
@@ -592,10 +594,20 @@ div.container div#wrapper button {
   text-transform: uppercase;
   color: white;
   outline: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+div.container div#wrapper button:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 div.container div#wrapper button.light {
-  background: #b8b0d9;
-  color: #361f78;
+  background: rgba(255, 176, 217, 0.15);
+  color: white;
+}
+div.container div#wrapper button.light:hover {
+  background-color: #b8b0d9;
+  color: #322759;
 }
 div.container div#wrapper section#intro p {
   margin: 3rem 0;
