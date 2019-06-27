@@ -248,12 +248,6 @@ section.sidebar .navbar a:hover {
 .employees {
   display: flex;
   flex-direction: column;
-  background-attachment: fixed;
-  background-image: url("../img/intro.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #5e42a6;
 }
 .employees h1 {
   padding: 3rem;
@@ -383,6 +377,18 @@ div.container div#wrapper {
     margin: 0 auto;
   }
 }
+@media (max-width: 500px) {
+  div.container div#wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1000px) {
+  div.container div#wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 div.container div#wrapper p {
   font-size: 2rem;
 }
@@ -421,6 +427,24 @@ div.container div#wrapper .halfscreen {
     padding-top: 4rem;
   }
 }
+
+div.container div#wrapper div.header-div {
+  width: 100%;
+}
+div.container div#wrapper div.header-div h1 {
+  padding: 3rem;
+  background-color: #1c1140;
+  margin: 0 0 4rem;
+}
+div.container div#wrapper .first-section {
+  background-attachment: fixed;
+  background-image: url("../img/intro.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #5e42a6;
+}
+
 div.container div#wrapper button {
   background: transparent;
   height: 4.75rem;
@@ -436,14 +460,6 @@ div.container div#wrapper button {
 div.container div#wrapper button.light {
   background: #b8b0d9;
   color: #361f78;
-}
-div.container div#wrapper section#intro {
-  background-attachment: fixed;
-  background-image: url("../img/intro.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #5e42a6;
 }
 div.container div#wrapper section#intro p {
   margin: 3rem 0;
