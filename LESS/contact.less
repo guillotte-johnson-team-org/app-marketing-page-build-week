@@ -18,6 +18,11 @@ section#contact {
       width: 100%;
     }
 
+    input,
+    textarea {
+      outline: none;
+    }
+
     div.form-input,
     div#form-textarea {
       display: flex;
@@ -91,9 +96,9 @@ section#contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 11rem;
 
     p.error {
+      margin-top: 4rem;
       height: 4.75rem;
       line-height: 4.75rem;
       padding: 0 2rem;
@@ -104,6 +109,13 @@ section#contact {
       color: #ff7474;
       background-color: rgba(255, 116, 116, 0.15);
       border: 1px solid rgba(255, 116, 116, 0.35);
+      transition-duration: 0.3s;
     }
+  }
+
+  .valid-message {
+    border: 1px solid rgba(116, 255, 152, 0.35) !important;
+    background-color: rgba(116, 255, 152, 0.15) !important;
+    color: #74ff98 !important;
   }
 }

@@ -363,6 +363,10 @@ section#contact div.form-container form#contact-form {
   flex-wrap: wrap;
   width: 100%;
 }
+section#contact div.form-container input,
+section#contact div.form-container textarea {
+  outline: none;
+}
 section#contact div.form-container div.form-input,
 section#contact div.form-container div#form-textarea {
   display: flex;
@@ -426,9 +430,9 @@ section#contact div.form-validation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 11rem;
 }
 section#contact div.form-validation p.error {
+  margin-top: 4rem;
   height: 4.75rem;
   line-height: 4.75rem;
   padding: 0 2rem;
@@ -439,6 +443,12 @@ section#contact div.form-validation p.error {
   color: #ff7474;
   background-color: rgba(255, 116, 116, 0.15);
   border: 1px solid rgba(255, 116, 116, 0.35);
+  transition-duration: 0.3s;
+}
+section#contact .valid-message {
+  border: 1px solid rgba(116, 255, 152, 0.35) !important;
+  background-color: rgba(116, 255, 152, 0.15) !important;
+  color: #74ff98 !important;
 }
 section#features {
   flex-direction: column;
@@ -581,6 +591,7 @@ div.container div#wrapper button {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: white;
+  outline: none;
 }
 div.container div#wrapper button.light {
   background: #b8b0d9;
