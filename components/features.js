@@ -49,7 +49,13 @@ const icons = [
   { prefix: "far", suffix: "fa-bookmark" },
   { prefix: "fab", suffix: "fa-angellist" },
   { prefix: "fas", suffix: "fa-asterisk" },
-  { prefix: "fas", suffix: "fa-cloud" }
+  { prefix: "fas", suffix: "fa-cloud" },
+  { prefix: "fas", suffix: "fa-tasks" },
+  { prefix: "fas", suffix: "fa-user-secret" },
+  { prefix: "fas", suffix: "fa-key" },
+  { prefix: "far", suffix: "fa-eye" },
+  { prefix: "far", suffix: "fa-bell" },
+  { prefix: "far", suffix: "fa-folder-open" }
 ];
 
 const tabs = document.querySelectorAll(".tab").forEach((elem, i) => {
