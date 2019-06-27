@@ -426,6 +426,24 @@ section#contact div.form-address ul#secondary-ul {
 section#contact div.form-address ul#secondary-ul li {
   margin-right: 18px;
 }
+section#contact div.form-validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 11rem;
+}
+section#contact div.form-validation p.error {
+  height: 4.75rem;
+  line-height: 4.75rem;
+  padding: 0 2rem;
+  border-radius: 2.375rem;
+  width: fit-content;
+  opacity: 0;
+  user-select: none;
+  color: #ff7474;
+  background-color: rgba(255, 116, 116, 0.15);
+  border: 1px solid rgba(255, 116, 116, 0.35);
+}
 footer {
   display: flex;
   width: 100%;
