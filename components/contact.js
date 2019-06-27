@@ -42,13 +42,23 @@ class Form {
   }
 
   sendMessage() {
-    setTimeout(() => {
-      this.name.value = this.email.value = this.message.value = "";
-      this.error.classList.add("valid-message");
-      this.error.textContent = "Message sent!";
-      this.error.style.opacity = 1;
-    }, 800);
+    $.ajax({
+      type: "POST",
+      url: `https://api.elasticemail.com/v2/email/send?apikey=c5f9615b-1bf2-4037-ba36-d034eb2f1978&subject=New Droom Site Message&from=${
+        this.email.value
+      }&fromName=${this.name.value}&bodyText=${
+        this.message.value
+      }\n\n&to=${mailto}`
+    }).done(function(response) {
+      if (response.success === true) {
+        document.querySelector(".error").classList.add("valid-message");
+        document.querySelector(".error").textContent =
+          "Thank you for your message! We'll be in touch shortly.";
+        document.querySelector(".error").style.opacity = 1;
+      }
+    });
   }
 }
 
-const form = new Form(document.querySelector("#contact-form"));
+const form = new Form(document.querySelector("#contact-form")),
+  mailto = "aaron.johnson1031@gmail.com";
