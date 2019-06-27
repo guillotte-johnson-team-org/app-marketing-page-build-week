@@ -44,6 +44,7 @@ div.container {
 
       @media(max-width: 500px){
         flex-direction: column;
+      
       }
     }
 
@@ -59,6 +60,13 @@ div.container {
         width: 100%;
         height: auto;
         align-items: center;
+        padding: 4rem 8rem;
+      }
+
+      h1{
+        @media(max-width: 500px){
+          padding-top: 4rem;
+        }
       }
 
     }
@@ -162,12 +170,22 @@ div.container {
         justify-content: space-between;
         padding: 8rem 8rem 0;
 
+        @media(max-width: 500px){
+          flex-direction: column;
+          align-content: center;
+          padding: 4rem 8rem;
+        }
+
         div {
           padding-bottom: 8rem;
           max-width: 75%;
 
           @media(max-width: 500px){
             max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
 
           img {
@@ -211,12 +229,24 @@ div.container {
         width: 100%;
         padding: 8rem;
 
+        @media(max-width: 500px){
+          padding: 4rem;
+        }
+
         div.boxes {
           display: flex;
           justify-content: space-between;
 
+          @media(max-width: 500px){
+            flex-direction: column;
+          }
+
           div {
             width: 47.5%;
+            
+            @media(max-width: 500px){
+              width: 100%;
+            }
           }
 
           h2 {
@@ -226,6 +256,11 @@ div.container {
             color: white;
             border-radius: 2px;
             margin-bottom: 1rem;
+
+            @media(max-width: 500px){
+              text-align: center;
+            }
+  
           }
 
           section {
@@ -280,10 +315,18 @@ div.container {
         background-color: #1c1140;
         width: 100%;
 
+        @media(max-width: 500px){
+          padding: 4rem;
+        }
+
         h3 {
           font-size: 2.25rem;
           font-weight: bold;
           margin-bottom: 2.25rem;
+
+          @media(max-width: 500px){
+            padding-top: 4rem;
+          }
         }
       }
 
@@ -291,9 +334,18 @@ div.container {
         display: flex;
         justify-content: center;
 
+        @media(max-width:500px){
+          flex-direction: column;
+          align-items: center;
+        }
+
         img {
           margin: 0 30px;
           height: 6rem;
+
+          @media(max-width: 500px){
+            margin: 2rem;
+          }
         }
       }
     }
