@@ -3,7 +3,7 @@ class Employee{
         this.employee = employee;
 
         this.dataEmp = this.employee.dataset.emp;
-        console.log(this.dataEmp);
+        
 
         this.employeePic = employee.querySelector('.employee img');
 
