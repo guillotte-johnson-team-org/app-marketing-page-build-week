@@ -164,16 +164,12 @@ p {
     width: 100%;
   }
 }
-section.sidebar {
+section.sidebar .navbar {
   width: 22%;
   height: 100vh;
-}
-section.sidebar .navbar {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
-  height: inherit;
-  width: inherit;
   background: #322759;
   position: fixed;
   top: 0;
@@ -185,6 +181,17 @@ section.sidebar .navbar {
   z-index: 10000;
 }
 @media (max-width: 500px) {
+  section.sidebar .navbar {
+    font-size: 1.4rem;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 1000px) {
   section.sidebar .navbar {
     font-size: 1.4rem;
     height: auto;
@@ -216,10 +223,18 @@ section.sidebar .navbar a {
     border-bottom: 1px solid #3b2c62;
   }
 }
+@media (max-width: 1000px) {
+  section.sidebar .navbar a {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3b2c62;
+  }
+}
 section.sidebar .navbar a:hover {
   border-bottom: 2px solid white;
   color: white;
-  justify-content: center;
   align-content: center;
 }
 @media (max-width: 500px) {
@@ -286,7 +301,8 @@ section.sidebar .navbar a:hover {
   padding: 2rem;
   height: 320px;
   background-color: rgba(108, 114, 208, 0.5);
-  overflow: hidden;
+  overflow: auto;
+  border-radius: 12px;
 }
 .employees .employee .employee-text h2 {
   margin-bottom: 25px;
@@ -347,6 +363,19 @@ div.container {
 }
 div.container div#wrapper {
   width: 78%;
+  margin-left: 22%;
+}
+@media (max-width: 500px) {
+  div.container div#wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1000px) {
+  div.container div#wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   div.container div#wrapper {
@@ -392,6 +421,7 @@ div.container div#wrapper .halfscreen {
     align-items: center;
   }
 }
+
 div.container div#wrapper div.header-div {
   width: 100%;
 }
@@ -408,6 +438,7 @@ div.container div#wrapper .first-section {
   background-size: 100% 100%;
   background-color: #5e42a6;
 }
+
 div.container div#wrapper button {
   background: transparent;
   height: 4.75rem;
