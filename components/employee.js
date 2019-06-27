@@ -5,34 +5,27 @@ class Employee{
         this.dataEmp = this.employee.dataset.emp;
         console.log(this.dataEmp);
 
-        this.employeeName = employee.querySelector('.employee-name');
+        this.employeePic = employee.querySelector('.employee img');
 
-        this.employeeDscrp = employee.querySelector('.employee-dscrpt');
+        this.employeeText = employee.querySelector('.employee-text');
 
-        this.employeeName.addEventListener('click', (event)=>{
-            return this.selectName();
+        this.employeePic.addEventListener('click', (event)=>{
+            return this.selectPic();
         })
 
     }
 
-    selectName(){
-        const dscrp = document.querySelector(`.employee-dscrpt[data-emp="${this.dataEmp}"]`);
+    selectPic(){
+        const text = document.querySelector(`.employee-text[data-emp="${this.dataEmp}"]`);
 
-        dscrp.classList.toggle('hide');
+        text.classList.toggle('hide');
 
     }
 }
 
 const employee = document.querySelectorAll('.employee');
 
-const employeeName = document.querySelectorAll('.employee-name');
 
-const employeeDscrp = document.querySelector('.employee-dscrpt');
-
-
-employeeName.forEach((name)=>{
-    name.style.cursor = 'pointer';
-})
 
 employee.forEach((employee)=>{
     return new Employee(employee);
