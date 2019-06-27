@@ -344,6 +344,88 @@ section.sidebar .navbar a:hover {
 .hide {
   display: none;
 }
+section#contact {
+  flex-direction: column;
+  justify-content: start !important;
+}
+section#contact p.header-para {
+  margin: 0 8rem;
+  padding-bottom: 4rem;
+}
+section#contact div.contact-wrapper {
+  display: flex;
+}
+section#contact div.form-container {
+  display: flex;
+  width: 65%;
+  padding: 0 4rem 0 8rem;
+  margin-bottom: 8rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+section#contact div.form-container form#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+section#contact div.form-container div.form-input,
+section#contact div.form-container div#form-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+section#contact div.form-container div.form-input label,
+section#contact div.form-container div#form-textarea label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+section#contact div.form-container div.form-input input,
+section#contact div.form-container div#form-textarea input,
+section#contact div.form-container div.form-input textarea,
+section#contact div.form-container div#form-textarea textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  resize: none;
+  border-radius: 4px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  padding: 12px;
+  color: white;
+}
+section#contact div.form-container div.form-input {
+  width: 48%;
+}
+section#contact div.form-container div.form-input:first-of-type {
+  margin-right: 4%;
+}
+section#contact div.form-container div#form-textarea {
+  width: 100%;
+}
+section#contact div.form-address {
+  width: 35%;
+  margin-bottom: 8rem;
+}
+section#contact div.form-address ul#main-ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+section#contact div.form-address ul#main-ul h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+section#contact div.form-address ul#main-ul li {
+  margin-bottom: 25px;
+}
+section#contact div.form-address ul#secondary-ul {
+  display: flex;
+  font-size: 2rem;
+}
+section#contact div.form-address ul#secondary-ul li {
+  margin-right: 18px;
+}
 footer {
   display: flex;
   width: 100%;
@@ -364,18 +446,6 @@ div.container {
 div.container div#wrapper {
   width: 78%;
   margin-left: 22%;
-}
-@media (max-width: 500px) {
-  div.container div#wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 1000px) {
-  div.container div#wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 @media (max-width: 500px) {
   div.container div#wrapper {
@@ -427,7 +497,6 @@ div.container div#wrapper .halfscreen {
     padding-top: 4rem;
   }
 }
-
 div.container div#wrapper div.header-div {
   width: 100%;
 }
@@ -444,7 +513,6 @@ div.container div#wrapper .first-section {
   background-size: 100% 100%;
   background-color: #5e42a6;
 }
-
 div.container div#wrapper button {
   background: transparent;
   height: 4.75rem;
