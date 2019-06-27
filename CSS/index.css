@@ -570,7 +570,12 @@ div.container div#wrapper section#two div.post-para div.boxes {
   }
 }
 div.container div#wrapper section#two div.post-para div.boxes div {
-  width: 100%;
+  width: 47.5%;
+}
+@media (max-width: 500px) {
+  div.container div#wrapper section#two div.post-para div.boxes div {
+    width: 100%;
+  }
 }
 div.container div#wrapper section#two div.post-para div.boxes h2 {
   font-weight: bolder;
