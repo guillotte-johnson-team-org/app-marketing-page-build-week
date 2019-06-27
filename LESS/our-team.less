@@ -1,17 +1,12 @@
 .employees {
   display: flex;
   flex-direction: column;
-  background-attachment: fixed;
-  background-image: url("../img/intro.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: @main-bg;
 
   h1 {
     padding: 3rem;
     background-color: #1c1140;
     margin: 0 0 4rem;
+
 
     @media(max-width: 1000px){
       margin: 0 auto;
@@ -21,18 +16,19 @@
       text-align: center;
     }
 
+
     @media(max-width: 500px){
       margin: 0 auto;
       padding-top: 7rem;
       width: 100%;
       text-align: center;
     }
-
   }
 
   .employee {
     display: flex;
     margin: 0 4rem;
+
 
     @media(max-width: 500px){
       flex-direction: column;
@@ -95,8 +91,10 @@
         text-align: center;
       }
     }
+
     button {
       margin-top: 2rem;
+
 
       @media(max-width: 500px){
         text-align: center;
@@ -105,7 +103,7 @@
   }
 }
 
-.hide{
-    display: none;
-}
 
+.hide {
+  display: none;
+}

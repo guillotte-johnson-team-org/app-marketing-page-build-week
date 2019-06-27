@@ -3,6 +3,7 @@
 @import "./global.less";
 @import "./nav.less";
 @import "./our-team.less";
+@import "./contact.less";
 @import "./footer.less";
 
 //Wrapper CSS
@@ -67,6 +68,25 @@ div.container {
           padding-top: 4rem;
         }
       }
+
+    }
+
+    div.header-div {
+      width: 100%;
+      h1 {
+        padding: 3rem;
+        background-color: #1c1140;
+        margin: 0 0 4rem;
+      }
+    }
+
+    .first-section {
+      background-attachment: fixed;
+      background-image: url("../img/intro.svg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: @main-bg;
     }
 
     button {
@@ -89,13 +109,6 @@ div.container {
 
     //Intro Sction CSS
     section#intro {
-      background-attachment: fixed;
-      background-image: url("../img/intro.svg");
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-color: @main-bg;
-
       p {
         margin: 3rem 0;
       }
@@ -124,7 +137,7 @@ div.container {
 
       div.appscreen {
         width: 18%;
-
+        
         @media(max-width: 500px){
           width: 40%;
         }
@@ -157,14 +170,12 @@ div.container {
         justify-content: space-between;
         padding: 8rem 8rem 0;
 
+
         @media(max-width: 500px){
           flex-direction: column;
           align-content: center;
           padding: 4rem 8rem;
         }
-
-
-
 
         div {
           padding-bottom: 8rem;
