@@ -456,11 +456,28 @@ section#features {
   flex-direction: column;
   justify-content: start !important;
 }
+@media (max-width: 500px) {
+  section#features {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  section#features h1 {
+    text-align: center;
+  }
+}
 section#features h4 {
   font-size: 2.5rem;
   font-weight: bold;
   text-decoration: underline;
   padding: 0 0 4rem 8rem;
+}
+@media (max-width: 500px) {
+  section#features h4 {
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 2rem 2rem 4rem;
+  }
 }
 section#features div.tabs-container {
   display: flex;
@@ -479,8 +496,19 @@ section#features div.tabs-container div.tab {
   border-radius: 8px;
   background-color: white;
 }
+@media (max-width: 500px) {
+  section#features div.tabs-container div.tab {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
 section#features div.tabs-container div.tab:nth-child(3n + 3) {
   margin-right: 0;
+}
+@media (max-width: 500px) {
+  section#features div.tabs-container div.tab:nth-child(3n + 3) {
+    margin: 30px auto;
+  }
 }
 section#features div.tabs-container div.tab i {
   font-size: 50px;
