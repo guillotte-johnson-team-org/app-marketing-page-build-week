@@ -251,13 +251,18 @@ section.sidebar .navbar a:hover {
   display: flex;
   flex-direction: column;
 }
-.employees h1 {
+@media (max-width: 500px) {
+  .employees .header-div {
+    padding-top: 4rem;
+  }
+}
+.employees .header-div h1 {
   padding: 3rem;
   background-color: #1c1140;
   margin: 0 0 4rem;
 }
 @media (max-width: 1000px) {
-  .employees h1 {
+  .employees .header-div h1 {
     margin: 0 auto;
     margin-bottom: 25px;
     padding-top: 7rem;
@@ -266,9 +271,9 @@ section.sidebar .navbar a:hover {
   }
 }
 @media (max-width: 500px) {
-  .employees h1 {
+  .employees .header-div h1 {
     margin: 0 auto;
-    padding-top: 7rem;
+    padding-top: 10rem;
     width: 100%;
     text-align: center;
   }
