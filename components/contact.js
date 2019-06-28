@@ -61,4 +61,4 @@ class Form {
 }
 
 const form = new Form(document.querySelector("#contact-form")),
-  mailto = "aaron.johnson1031@gmail.com";
+  mailto = "aaron.johnson1031@gmail.com, rayguillotte@gmail.com";
