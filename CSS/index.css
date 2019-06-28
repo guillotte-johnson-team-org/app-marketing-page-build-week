@@ -348,10 +348,6 @@ section#contact {
   flex-direction: column;
   justify-content: start !important;
 }
-section#contact p.header-para {
-  margin: 0 8rem;
-  padding-bottom: 4rem;
-}
 section#contact div.contact-wrapper {
   display: flex;
 }
@@ -444,6 +440,45 @@ section#contact div.form-validation p.error {
   background-color: rgba(255, 116, 116, 0.15);
   border: 1px solid rgba(255, 116, 116, 0.35);
 }
+section#features {
+  flex-direction: column;
+  justify-content: start !important;
+}
+section#features h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0 0 4rem 8rem;
+}
+section#features div.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6rem 8rem;
+}
+section#features div.tabs-container div.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  width: calc(34% - 30px);
+  height: auto;
+  margin: 0 30px 30px 0;
+  border-radius: 8px;
+  background-color: white;
+}
+section#features div.tabs-container div.tab:nth-child(3n + 3) {
+  margin-right: 0;
+}
+section#features div.tabs-container div.tab i {
+  font-size: 50px;
+  padding: 0 0 25px;
+}
+section#features div.tabs-container div.tab p {
+  color: black;
+  font-size: 1.6rem;
+  width: 85%;
+}
 footer {
   display: flex;
   width: 100%;
@@ -530,6 +565,10 @@ div.container div#wrapper .first-section {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #5e42a6;
+}
+div.container div#wrapper p.header-para {
+  margin: 0 8rem;
+  padding-bottom: 4rem;
 }
 div.container div#wrapper button {
   background: transparent;
