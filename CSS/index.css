@@ -213,6 +213,8 @@ section.sidebar .navbar a {
   border-bottom: 2px solid #3b2c62;
   letter-spacing: 1px;
   font-family: verdana;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   section.sidebar .navbar a {
@@ -363,6 +365,10 @@ section#contact div.form-container form#contact-form {
   flex-wrap: wrap;
   width: 100%;
 }
+section#contact div.form-container input,
+section#contact div.form-container textarea {
+  outline: none;
+}
 section#contact div.form-container div.form-input,
 section#contact div.form-container div#form-textarea {
   display: flex;
@@ -426,9 +432,9 @@ section#contact div.form-validation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 11rem;
 }
 section#contact div.form-validation p.error {
+  margin-top: 4rem;
   height: 4.75rem;
   line-height: 4.75rem;
   padding: 0 2rem;
@@ -439,6 +445,12 @@ section#contact div.form-validation p.error {
   color: #ff7474;
   background-color: rgba(255, 116, 116, 0.15);
   border: 1px solid rgba(255, 116, 116, 0.35);
+  transition-duration: 0.3s;
+}
+section#contact .valid-message {
+  border: 1px solid rgba(116, 255, 152, 0.35) !important;
+  background-color: rgba(116, 255, 152, 0.15) !important;
+  color: #74ff98 !important;
 }
 section#features {
   flex-direction: column;
@@ -581,10 +593,21 @@ div.container div#wrapper button {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: white;
+  outline: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+div.container div#wrapper button:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 div.container div#wrapper button.light {
-  background: #b8b0d9;
-  color: #361f78;
+  background: rgba(255, 176, 217, 0.15);
+  color: white;
+}
+div.container div#wrapper button.light:hover {
+  background-color: #b8b0d9;
+  color: #322759;
 }
 div.container div#wrapper section#intro p {
   margin: 3rem 0;
