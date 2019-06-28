@@ -350,8 +350,29 @@ section#contact {
   flex-direction: column;
   justify-content: start !important;
 }
+@media (max-width: 500px) {
+  section#contact {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  section#contact p.header-para {
+    width: 83%;
+    margin: 0 auto!important;
+  }
+}
+@media (max-width: 500px) {
+  section#contact h1 {
+    text-align: center;
+  }
+}
 section#contact div.contact-wrapper {
   display: flex;
+}
+@media (max-width: 500px) {
+  section#contact div.contact-wrapper {
+    flex-wrap: wrap;
+  }
 }
 section#contact div.form-container {
   display: flex;
@@ -360,10 +381,24 @@ section#contact div.form-container {
   margin-bottom: 8rem;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+@media (max-width: 500px) {
+  section#contact div.form-container {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    padding: 4rem;
+  }
+}
 section#contact div.form-container form#contact-form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  section#contact div.form-container form#contact-form {
+    justify-content: center;
+  }
 }
 section#contact div.form-container input,
 section#contact div.form-container textarea {
@@ -408,10 +443,23 @@ section#contact div.form-address {
   width: 35%;
   margin-bottom: 8rem;
 }
+@media (max-width: 500px) {
+  section#contact div.form-address {
+    width: 100%;
+  }
+}
 section#contact div.form-address ul#main-ul {
   display: flex;
   flex-direction: column;
   padding: 0 4rem;
+}
+@media (max-width: 500px) {
+  section#contact div.form-address ul#main-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100%;
+  }
 }
 section#contact div.form-address ul#main-ul h4 {
   font-size: 1.8rem;
@@ -421,17 +469,43 @@ section#contact div.form-address ul#main-ul h4 {
 section#contact div.form-address ul#main-ul li {
   margin-bottom: 25px;
 }
+@media (max-width: 500px) {
+  section#contact div.form-address ul#main-ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
 section#contact div.form-address ul#secondary-ul {
   display: flex;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  section#contact div.form-address ul#secondary-ul {
+    justify-content: flex-start;
+  }
+}
 section#contact div.form-address ul#secondary-ul li {
   margin-right: 18px;
+}
+@media (max-width: 500px) {
+  section#contact div.form-address ul#secondary-ul li {
+    margin: 0 5px;
+    width: auto;
+  }
 }
 section#contact div.form-validation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  section#contact div.form-validation {
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
 }
 section#contact div.form-validation p.error {
   margin-top: 4rem;
