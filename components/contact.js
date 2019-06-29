@@ -48,8 +48,9 @@ class Form {
         this.email.value
       }&fromName=${this.name.value}&bodyText=${
         this.message.value
-      }\n\n&to=${mailto}`
+      }\n\n&msgTo=${mailto}`
     }).done(function(response) {
+      console.log(response);
       if (response.success === true) {
         document.querySelector(".error").classList.add("valid-message");
         document.querySelector(".error").textContent =
@@ -61,4 +62,4 @@ class Form {
 }
 
 const form = new Form(document.querySelector("#contact-form")),
-  mailto = "aaron.johnson1031@gmail.com, rayguillotte@gmail.com";
+  mailto = "aaron.johnson1031@gmail.com;rayguillotte@gmail.com";

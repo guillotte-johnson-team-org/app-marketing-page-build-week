@@ -363,7 +363,7 @@ section#contact {
 @media (max-width: 500px) {
   section#contact p.header-para {
     width: 83%;
-    margin: 0 auto!important;
+    margin: 0 auto !important;
   }
 }
 @media (max-width: 500px) {
@@ -514,9 +514,8 @@ section#contact div.form-validation {
 }
 section#contact div.form-validation p.error {
   margin-top: 4rem;
-  height: 4.75rem;
-  line-height: 4.75rem;
-  padding: 0 2rem;
+  height: auto;
+  padding: 2.375rem 2rem;
   border-radius: 2.375rem;
   width: fit-content;
   opacity: 0;
