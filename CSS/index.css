@@ -180,6 +180,9 @@ section.sidebar .navbar {
   align-items: center;
   z-index: 10000;
 }
+section.sidebar .navbar a.active {
+  color: white;
+}
 @media (max-width: 500px) {
   section.sidebar .navbar {
     font-size: 1.4rem;
@@ -247,9 +250,6 @@ section.sidebar .navbar a:hover {
     justify-content: center;
     align-content: center;
   }
-}
-a.active {
-  color: white !important;
 }
 .employees {
   display: flex;

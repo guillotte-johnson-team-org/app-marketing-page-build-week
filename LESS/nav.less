@@ -23,6 +23,10 @@ section.sidebar {
     align-items: center;
     z-index: 10000;
 
+    a.active {
+      color: @nav-text-hover;
+    }
+
     @media (max-width: 500px) {
       font-size: 1.4rem;
       height: auto;
@@ -88,9 +92,4 @@ section.sidebar {
       }
     }
   }
-}
-
-a.active{
-  color: @nav-text-hover!important;
-  
 }
