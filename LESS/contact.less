@@ -6,15 +6,28 @@ section#contact {
     padding-top: 4rem;
   }
 
+  @media (max-width: 1000px){
+    padding-top: 4rem;
+  }
+
   p.header-para {
     @media (max-width: 500px) {
       width: 83%;
       margin: 0 auto !important;
     }
+
+    @media (max-width: 1000px){
+      width: 83%;
+      margin: 0 auto;
+    }
   }
 
   h1 {
     @media (max-width: 500px) {
+      text-align: center;
+    }
+
+    @media (max-width: 1000px){
       text-align: center;
     }
   }
@@ -23,6 +36,10 @@ section#contact {
     display: flex;
 
     @media (max-width: 500px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1000px){
       flex-wrap: wrap;
     }
   }
@@ -41,12 +58,24 @@ section#contact {
       padding: 4rem;
     }
 
+    @media (max-width: 1000px){
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      justify-content: center;
+      padding: 4rem;
+    }
+
     form#contact-form {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
 
       @media (max-width: 500px) {
+        justify-content: center;
+      }
+
+      @media (max-width: 1000px){
         justify-content: center;
       }
     }

@@ -63,8 +63,19 @@ div.container {
         padding: 4rem 8rem;
       }
 
+      @media (max-width: 1000px) {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 4rem 8rem;
+      }
+
       h1 {
         @media (max-width: 500px) {
+          padding-top: 4rem;
+        }
+
+        @media (max-width: 1000px) {
           padding-top: 4rem;
         }
       }
@@ -146,10 +157,17 @@ div.container {
         display: flex;
         justify-content: space-evenly;
         padding: 8rem;
+      
 
         @media (max-width: 500px) {
           flex-wrap: wrap;
         }
+
+        @media (max-width: 1000px) {
+          flex-wrap: wrap;
+          // padding: 10rem;
+        }
+        
       }
 
       div.appscreen {
@@ -159,9 +177,14 @@ div.container {
           width: 40%;
         }
 
+        @media (max-width: 1000px) {
+          width: 40%;
+        }
+
         img {
           width: 100%;
           margin-bottom: 20px;
+
         }
 
         p {
@@ -170,6 +193,10 @@ div.container {
 
           @media (max-width: 500px) {
             margin-bottom: 15px;
+          }
+
+          @media(max-width: 1000px){
+            padding-bottom: 4rem;
           }
         }
       }
@@ -193,11 +220,25 @@ div.container {
           padding: 4rem 8rem;
         }
 
+        @media (max-width: 1000px) {
+          flex-direction: column;
+          align-content: center;
+          padding: 4rem 8rem;
+        }
+
         div {
           padding-bottom: 8rem;
           max-width: 75%;
 
           @media (max-width: 500px) {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @media (max-width: 1000px) {
             max-width: 100%;
             display: flex;
             flex-direction: column;
@@ -211,6 +252,11 @@ div.container {
 
             @media (max-width: 500px) {
               display: none;
+            }
+
+            @media (max-width: 1000px){
+              margin: 0 auto;
+              padding-top: 2rem;
             }
           }
         }
@@ -258,10 +304,18 @@ div.container {
             flex-direction: column;
           }
 
+          @media (max-width: 1000px) {
+            flex-direction: column;
+          }
+
           div {
             width: 47.5%;
 
             @media (max-width: 500px) {
+              width: 100%;
+            }
+
+            @media (max-width: 1000px) {
               width: 100%;
             }
           }
@@ -275,6 +329,10 @@ div.container {
             margin-bottom: 1rem;
 
             @media (max-width: 500px) {
+              text-align: center;
+            }
+
+            @media (max-width: 1000px) {
               text-align: center;
             }
           }

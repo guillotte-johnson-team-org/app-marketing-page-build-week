@@ -164,6 +164,12 @@ p {
     width: 100%;
   }
 }
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 section.sidebar .navbar {
   width: 22%;
   height: 100vh;
@@ -231,7 +237,7 @@ section.sidebar .navbar a {
     width: auto;
     margin-left: 0;
     margin-bottom: 0;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border-bottom: 1px solid #3b2c62;
   }
 }
@@ -256,6 +262,11 @@ a.active {
   flex-direction: column;
 }
 @media (max-width: 500px) {
+  .employees .header-div {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 1000px) {
   .employees .header-div {
     padding-top: 4rem;
   }
@@ -364,13 +375,29 @@ section#contact {
     padding-top: 4rem;
   }
 }
+@media (max-width: 1000px) {
+  section#contact {
+    padding-top: 4rem;
+  }
+}
 @media (max-width: 500px) {
   section#contact p.header-para {
     width: 83%;
     margin: 0 auto !important;
   }
 }
+@media (max-width: 1000px) {
+  section#contact p.header-para {
+    width: 83%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
+  section#contact h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
   section#contact h1 {
     text-align: center;
   }
@@ -379,6 +406,11 @@ section#contact div.contact-wrapper {
   display: flex;
 }
 @media (max-width: 500px) {
+  section#contact div.contact-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
   section#contact div.contact-wrapper {
     flex-wrap: wrap;
   }
@@ -399,12 +431,26 @@ section#contact div.form-container {
     padding: 4rem;
   }
 }
+@media (max-width: 1000px) {
+  section#contact div.form-container {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    padding: 4rem;
+  }
+}
 section#contact div.form-container form#contact-form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 @media (max-width: 500px) {
+  section#contact div.form-container form#contact-form {
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
   section#contact div.form-container form#contact-form {
     justify-content: center;
   }
@@ -543,7 +589,17 @@ section#features {
     padding-top: 4rem;
   }
 }
+@media (max-width: 1000px) {
+  section#features {
+    padding-top: 4rem;
+  }
+}
 @media (max-width: 500px) {
+  section#features h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
   section#features h1 {
     text-align: center;
   }
@@ -667,7 +723,20 @@ div.container div#wrapper .halfscreen {
     padding: 4rem 8rem;
   }
 }
+@media (max-width: 1000px) {
+  div.container div#wrapper .halfscreen {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 4rem 8rem;
+  }
+}
 @media (max-width: 500px) {
+  div.container div#wrapper .halfscreen h1 {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 1000px) {
   div.container div#wrapper .halfscreen h1 {
     padding-top: 4rem;
   }
@@ -742,10 +811,20 @@ div.container div#wrapper section#one div.screen-container {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 1000px) {
+  div.container div#wrapper section#one div.screen-container {
+    flex-wrap: wrap;
+  }
+}
 div.container div#wrapper section#one div.appscreen {
   width: 18%;
 }
 @media (max-width: 500px) {
+  div.container div#wrapper section#one div.appscreen {
+    width: 40%;
+  }
+}
+@media (max-width: 1000px) {
   div.container div#wrapper section#one div.appscreen {
     width: 40%;
   }
@@ -761,6 +840,11 @@ div.container div#wrapper section#one div.appscreen p {
 @media (max-width: 500px) {
   div.container div#wrapper section#one div.appscreen p {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  div.container div#wrapper section#one div.appscreen p {
+    padding-bottom: 4rem;
   }
 }
 div.container div#wrapper section#one div.divider {
@@ -782,11 +866,27 @@ div.container div#wrapper section#one div.info-graph {
     padding: 4rem 8rem;
   }
 }
+@media (max-width: 1000px) {
+  div.container div#wrapper section#one div.info-graph {
+    flex-direction: column;
+    align-content: center;
+    padding: 4rem 8rem;
+  }
+}
 div.container div#wrapper section#one div.info-graph div {
   padding-bottom: 8rem;
   max-width: 75%;
 }
 @media (max-width: 500px) {
+  div.container div#wrapper section#one div.info-graph div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
   div.container div#wrapper section#one div.info-graph div {
     max-width: 100%;
     display: flex;
@@ -802,6 +902,12 @@ div.container div#wrapper section#one div.info-graph div img {
 @media (max-width: 500px) {
   div.container div#wrapper section#one div.info-graph div img {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  div.container div#wrapper section#one div.info-graph div img {
+    margin: 0 auto;
+    padding-top: 2rem;
   }
 }
 div.container div#wrapper section#one div.info-graph h2,
@@ -843,10 +949,20 @@ div.container div#wrapper section#two div.post-para div.boxes {
     flex-direction: column;
   }
 }
+@media (max-width: 1000px) {
+  div.container div#wrapper section#two div.post-para div.boxes {
+    flex-direction: column;
+  }
+}
 div.container div#wrapper section#two div.post-para div.boxes div {
   width: 47.5%;
 }
 @media (max-width: 500px) {
+  div.container div#wrapper section#two div.post-para div.boxes div {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
   div.container div#wrapper section#two div.post-para div.boxes div {
     width: 100%;
   }
@@ -860,6 +976,11 @@ div.container div#wrapper section#two div.post-para div.boxes h2 {
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
+  div.container div#wrapper section#two div.post-para div.boxes h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
   div.container div#wrapper section#two div.post-para div.boxes h2 {
     text-align: center;
   }
