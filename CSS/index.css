@@ -307,6 +307,7 @@ a.active {
   height: 320px;
   border-radius: 12px;
   margin-right: 7px;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .employees .employee img {
