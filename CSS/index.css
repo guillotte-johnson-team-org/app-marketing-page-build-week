@@ -188,7 +188,6 @@ section.sidebar .navbar {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    padding: 10px 0;
   }
 }
 @media (max-width: 1000px) {
@@ -199,7 +198,6 @@ section.sidebar .navbar {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    padding: 10px 0;
   }
 }
 section.sidebar .navbar a {
@@ -218,10 +216,11 @@ section.sidebar .navbar a {
 }
 @media (max-width: 500px) {
   section.sidebar .navbar a {
+    font-size: 1.2rem;
     width: auto;
     margin-left: 0;
     margin-bottom: 0;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border-bottom: 1px solid #3b2c62;
   }
 }
@@ -246,6 +245,9 @@ section.sidebar .navbar a:hover {
     justify-content: center;
     align-content: center;
   }
+}
+a.active {
+  color: white !important;
 }
 .employees {
   display: flex;
