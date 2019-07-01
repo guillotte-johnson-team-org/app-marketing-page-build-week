@@ -349,9 +349,17 @@ section.sidebar .navbar a:hover {
 }
 .employees .employee .employee-text p {
   margin-bottom: 25px;
-  font-size: 1.7rem !important;
+  font-size: 1.5rem !important;
 }
 @media (max-width: 1000px) {
+  .employees .employee .employee-text {
+    overflow: hidden;
+  }
+  .employees .employee .employee-text p {
+    font-size: 1.5em !important;
+  }
+}
+@media (max-width: 800px) {
   .employees .employee .employee-text {
     overflow: scroll;
   }
