@@ -331,7 +331,6 @@ section.sidebar .navbar a:hover {
   height: 320px;
   background-color: rgba(108, 114, 208, 0.5);
   border-radius: 4px;
-  overflow: scroll;
 }
 .employees .employee .employee-text a {
   font-weight: bold;
@@ -351,6 +350,11 @@ section.sidebar .navbar a:hover {
 .employees .employee .employee-text p {
   margin-bottom: 25px;
   font-size: 1.7rem !important;
+}
+@media (max-width: 1000px) {
+  .employees .employee .employee-text {
+    overflow: scroll;
+  }
 }
 @media (max-width: 500px) {
   .employees .employee .employee-text {
